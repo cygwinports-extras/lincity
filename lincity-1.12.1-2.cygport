@@ -1,0 +1,14 @@
+DESCRIPTION="X11 city simulation game"
+HOMEPAGE="http://lincity.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+	cd ${B}
+	cygconf --without-svga --with-x
+	cygmake
+}
+
+DOCS="Acknowledgements"
