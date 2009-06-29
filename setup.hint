@@ -1,5 +1,5 @@
 category: X11 Games
-requires: cygwin libintl8 libX11_6
+requires: libintl8 libX11_6
 sdesc: "City simulation game for X11"
 ldesc: "Lincity is a city simulation game. You are required to build 
 and maintain a city. You must feed, house, provide jobs and goods for 
